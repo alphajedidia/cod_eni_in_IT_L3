@@ -1,0 +1,1 @@
+{"Token":"","Service":{"ID":"demand-service-8882","Service":"demand-service","Tags":[],"Address":"emii.mshome.net","Meta":{"secure":"false"},"Port":8882,"Weights":{"Passing":1,"Warning":1},"EnableTagOverride":false,"Proxy":{"Mode":"","MeshGateway":{},"Expose":{}},"Connect":{},"PeerName":"","CreateIndex":0,"ModifyIndex":0},"Source":"remote"}
