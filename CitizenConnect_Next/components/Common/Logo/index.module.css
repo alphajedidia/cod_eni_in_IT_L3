@@ -1,0 +1,18 @@
+.wrapper {
+  @apply flex 
+    items-center
+    justify-start
+  text-custom-secondary
+    text-base
+    2xl:text-2xl;
+
+  & span {
+    @apply font-semibold
+      tracking-wide;
+  }
+}
+
+.logo {
+  @apply size-8
+  2xl:size-10;
+}

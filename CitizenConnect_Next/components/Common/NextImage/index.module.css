@@ -1,0 +1,8 @@
+.image {
+}
+
+.sm {
+  @apply size-[48px] 
+    rounded
+    object-cover;
+}

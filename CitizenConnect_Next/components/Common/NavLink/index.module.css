@@ -1,0 +1,28 @@
+.navlink {
+  @apply no-underline
+        capitalize
+        tracking-wider
+        relative 
+        flex
+        justify-center
+        items-center
+        gap-2
+        text-custom-secondary
+        max-w-fit
+        max-h-16
+        py-2
+        mx-3
+        font-semibold
+        text-sm
+        2xl:text-xl;
+
+  &:hover {
+    @apply hover:text-custom-blue
+       cursor-pointer;
+  }
+
+  &.active {
+    @apply text-custom-blue
+       font-bold;
+  }
+}

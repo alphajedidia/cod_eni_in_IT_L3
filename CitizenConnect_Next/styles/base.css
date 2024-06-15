@@ -1,0 +1,12 @@
+* {
+  @apply subpixel-antialiased;
+}
+
+html,
+body {
+  @apply size-full
+      [scrollbar-gutter:stable] 
+      scroll-smooth
+    bg-custom-white
+      font-open-sans;
+}

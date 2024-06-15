@@ -1,0 +1,66 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+  :root {
+  }
+}
+
+@layer components {
+  .h1 {
+    @apply text-4xl font-semibold text-custom-secondary;
+  }
+  .h2 {
+    @apply text-2xl font-semibold text-custom-secondary;
+  }
+
+  .custom-table {
+    @apply table rounded-md relative w-full;
+  }
+  .table-header {
+    @apply text-sm text-custom-white tracking-wide bg-custom-black sticky top-0  z-10 w-full rounded-md;
+  }
+  .table-header-cell {
+    @apply w-48 px-6  font-semibold py-4  text-left overflow-auto whitespace-normal;
+  }
+  .table-header-cell-action {
+    @apply w-64 px-6  font-semibold py-2   text-center overflow-auto whitespace-normal;
+  }
+  .table-header-cell-order-id {
+    @apply w-64 px-6 font-semibold py-2   text-left overflow-auto whitespace-normal;
+  }
+  .table-header-cell-price {
+    @apply w-48 px-6 font-semibold py-2   text-left overflow-auto whitespace-normal;
+  }
+  .table-header-cell-input {
+    @apply w-64 px-6  font-semibold py-2  text-left overflow-auto whitespace-normal;
+  }
+  .table-row {
+    @apply bg-white even:bg-gray-50 text-base;
+  }
+  .table-row-cell {
+    @apply relative text-sm w-48 px-6 py-2 text-left overflow-auto whitespace-normal;
+  }
+  .table-row-cell-price {
+    @apply relative text-sm text-gray-800 w-48  font-semibold pr-6 text-left py-2 overflow-auto whitespace-normal;
+  }
+  .table-row-cell-order-id {
+    @apply text-sm w-64 font-semibold text-gray-700 px-6 py-2  text-left overflow-auto whitespace-normal;
+  }
+  .table-row-cell-product {
+    @apply text-xs w-64 font-semibold text-gray-700 px-6 py-2  text-left overflow-auto whitespace-normal;
+  }
+  .table-row-cell-input {
+    @apply relative text-sm w-64 px-6 py-2 font-light text-left overflow-auto whitespace-normal;
+  }
+  .table-row-cell-actions {
+    @apply relative flex gap-3 text-sm w-64 px-6 py-2 font-light text-left overflow-auto whitespace-normal;
+  }
+  .icon-edit {
+    @apply mx-auto h-8 w-8 text-yellow-500 hover:scale-125 hover:text-yellow-600 transition-all delay-75 ease-in-out;
+  }
+  .icon-delete {
+    @apply mx-auto h-8 w-8 text-red-500 hover:scale-125 hover:text-red-600 transition-all delay-75 ease-in-out;
+  }
+}

@@ -1,0 +1,98 @@
+.button {
+  @apply relative
+    inline-flex
+    items-center
+    gap-2
+    px-4
+    py-2
+    text-center
+    font-semibold;
+
+  .svg {
+    @apply size-5;
+  }
+
+  &[aria-disabled="true"] {
+    @apply cursor-not-allowed;
+  }
+
+  &.primary {
+    @apply rounded
+      border
+      border-custom-blue
+      bg-custom-blue
+      text-white
+      shadow-sm
+      text-sm
+      tracking-wide;
+
+    &:hover {
+      @apply border-custom-blue/80
+        bg-custom-blue/80
+        text-white;
+    }
+
+    &:focus {
+      @apply border-custom-blue/80
+        bg-custom-blue;
+    }
+
+    &[aria-disabled="true"] {
+      @apply bg-custom-blue/40
+        opacity-50;
+    }
+  }
+
+  &.secondary {
+    @apply rounded-lg
+      text-neutral-800
+      dark:text-neutral-200;
+
+    &:hover {
+      @apply bg-neutral-100
+        text-neutral-800
+        dark:bg-neutral-900
+        dark:text-neutral-200;
+    }
+
+    &[aria-disabled="true"] {
+      @apply bg-transparent
+        opacity-50;
+    }
+
+    &:focus {
+      @apply bg-neutral-100
+        text-neutral-800
+        dark:bg-neutral-900
+        dark:text-neutral-200;
+    }
+  }
+
+  &.search {
+    @apply rounded-[8px]
+      bg-custom-blue
+      text-white
+      shadow-sm
+      bg-gradient-to-r
+      from-custom-blue
+      to-custom-green
+      px-6
+      text-sm
+      tracking-wide;
+
+    &:hover {
+      @apply bg-custom-blue
+        text-white;
+    }
+
+    &:focus {
+      @apply border-green-700
+        bg-green-700;
+    }
+
+    &[aria-disabled="true"] {
+      @apply bg-green-600
+        opacity-50;
+    }
+  }
+}
