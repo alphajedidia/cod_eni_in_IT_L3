@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "CitizenConnect",
+    "slug": "CitizenConnect",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "citizenconnect",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/splash.gif",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.zora029.citizenconnect"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/icon.png"
+    },
+    "plugins": ["expo-router", "expo-secure-store"],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "0068f21b-8d59-4afd-b662-82ac480246aa"
+      }
+    }
+  }
+}
